@@ -1,0 +1,32 @@
+{
+    "settings": {
+        "input":"int",
+        "operations": [
+            {
+                "type": "multiply",
+                "operand": [
+                    "10"
+                ]
+            },
+            {
+                "type": "logarithm",
+                "operand": [
+                    "10"
+                ]
+            },
+            {
+                "type": "degree",
+                "operand": [
+                    "2"
+                ]
+            },
+            {
+                "type": "average",
+                "operand": [
+                    "10"
+                ]
+            }
+        ],
+        "output":"int"
+    }
+}
