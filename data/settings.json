@@ -1,6 +1,6 @@
 {
     "settings": {
-        "input":"int",
+        "input":"float",
         "operations": [
             {
                 "type": "multiply",
@@ -15,7 +15,7 @@
                 ]
             },
             {
-                "type": "degree",
+                "type": "power",
                 "operand": [
                     "2"
                 ]
@@ -27,6 +27,6 @@
                 ]
             }
         ],
-        "output":"int"
+        "output":"float"
     }
 }

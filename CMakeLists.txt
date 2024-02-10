@@ -3,20 +3,18 @@ cmake_minimum_required(VERSION 3.15)
 project(data_processor LANGUAGES CXX)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-#set(CMAKE_AUTOUIC ON)
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_AUTORCC ON)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(PROJECT_SOURCES ${CMAKE_SOURCE_DIR}/src/element.h ${CMAKE_SOURCE_DIR}/src/element.cpp
-                    ${CMAKE_SOURCE_DIR}/src/main.cpp)
-
-#find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
-#find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
-#message(STATUS "Found Qt ${QT_VERSION_MAJOR}")
+                    ${CMAKE_SOURCE_DIR}/src/input_data.h ${CMAKE_SOURCE_DIR}/src/input_data.cpp
+                    ${CMAKE_SOURCE_DIR}/src/output_data.h ${CMAKE_SOURCE_DIR}/src/output_data.cpp
+                    ${CMAKE_SOURCE_DIR}/src/settings.h ${CMAKE_SOURCE_DIR}/src/settings.cpp
+                    ${CMAKE_SOURCE_DIR}/src/operation.h ${CMAKE_SOURCE_DIR}/src/operation.cpp
+                    ${CMAKE_SOURCE_DIR}/src/processor.h ${CMAKE_SOURCE_DIR}/src/processor.cpp
+                    ${CMAKE_SOURCE_DIR}/src/solution.h ${CMAKE_SOURCE_DIR}/src/solution.cpp
+                    ${CMAKE_SOURCE_DIR}/src/json.h ${CMAKE_SOURCE_DIR}/src/json.cpp
+                    ${CMAKE_SOURCE_DIR}/src/reader.h ${CMAKE_SOURCE_DIR}/src/reader.cpp
+                    ${CMAKE_SOURCE_DIR}/src/main.cpp  ${CMAKE_SOURCE_DIR}/src/common.h)
 
 add_executable(data_processor src/main.cpp ${PROJECT_SOURCES})
-
-#target_link_libraries(${PROJECT_NAME} Qt${QT_VERSION_MAJOR}::Core)
