@@ -56,7 +56,8 @@ struct DataFiles
  * @brief Класс - родитель для ошибок валидации
  * 
  */
-class ValidityError : public std::logic_error {
+class ValidityError : public std::logic_error 
+{
 public:
     ValidityError(const std::string &error_text) : std::logic_error(error_text) 
     {
@@ -67,7 +68,8 @@ public:
  * @brief Класс - родитель для ошибок в вычислениях
  * 
  */
-class CalculationError : public std::logic_error {
+class CalculationError : public std::logic_error 
+{
 public:
     CalculationError(const std::string &error_text) : std::logic_error(error_text) 
     {

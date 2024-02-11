@@ -1,6 +1,6 @@
 {
     "settings": {
-        "input":"float",
+        "input":"int",
         "operations": [
             {
                 "type": "multiply",

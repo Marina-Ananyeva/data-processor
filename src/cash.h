@@ -10,29 +10,18 @@ const int CASH_SIZE = 10;
 using Data = std::vector<std::shared_ptr<Element>>;
 
 // Класс для хранения последних 10 результатов расчета
-class Cash {
+class Cash 
+{
 public:
     Cash() = default;
 
-    void addResult(const Data &result) {
-        if (m_cash.size() > CASH_SIZE) {
-            m_cash.erase(m_cash.begin());
-        }
-        m_cash.push_back(result);
-    }
+    void addResult(const Data &result);
 
-    size_t getCashSize() const
-    {
-        return m_cash.size();
-    }
+    size_t getCashSize() const;
 
-    const std::vector<Data> &getCash() const {
-        return m_cash;
-    }
+    const std::vector<Data> &getCash() const;
 
-    const Data &getLastCash() const {
-        return m_cash.back();
-    }
+    const Data &getLastCash() const;
 
 private:
     std::vector<Data> m_cash;

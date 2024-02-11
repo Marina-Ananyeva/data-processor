@@ -1,10 +1,12 @@
+#include <iostream>
 #include <memory>
 #include <string>
 
 #include "common.h"
 #include "solution.h"
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) 
+{
     try {
         std::string inputFileName = "../data/input.txt";
         std::string configFileName = "../data/settings.json";
