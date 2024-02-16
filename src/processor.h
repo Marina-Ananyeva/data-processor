@@ -17,6 +17,8 @@ public:
 
     virtual Data process(const std::vector<Data> &data) const;
 
+    virtual Data processPar(const std::vector<Data> &data) const;
+
     OperationType getType() const;
 
     ~DataProcessor() = default;
@@ -51,6 +53,8 @@ public:
     AverageLastProcessor(OperationType type, const Data &operands = Data{});
 
     Data process(const std::vector<Data> &data) const override;
+
+    Data processPar(const std::vector<Data> &data) const override;
 };
 
 // Фабрика для создания обработчиков операций

@@ -16,6 +16,7 @@ set(PROJECT_SOURCES ${CMAKE_SOURCE_DIR}/src/element.h ${CMAKE_SOURCE_DIR}/src/el
                     ${CMAKE_SOURCE_DIR}/src/json.h ${CMAKE_SOURCE_DIR}/src/json.cpp
                     ${CMAKE_SOURCE_DIR}/src/reader.h ${CMAKE_SOURCE_DIR}/src/reader.cpp
                     ${CMAKE_SOURCE_DIR}/src/cash.h ${CMAKE_SOURCE_DIR}/src/cash.cpp
-                    ${CMAKE_SOURCE_DIR}/src/main.cpp  ${CMAKE_SOURCE_DIR}/src/common.h)
+                    ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_SOURCE_DIR}/src/common.h
+                    ${CMAKE_SOURCE_DIR}/src/log_duration.h)
 
 add_executable(data_processor src/main.cpp ${PROJECT_SOURCES})
