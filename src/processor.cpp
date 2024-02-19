@@ -32,10 +32,10 @@ Data DataProcessor::processPar(const std::vector<Data> &data) const
     if(data.empty())
         return Data{};
 
-    Data result;
-    std::for_each(std::execution::par, data.front().begin(), data.front().end()
+    Data result(data.front().size());
+    std::transform(std::execution::par, data.front().begin(), data.front().end(), result.begin()
                 , [&result, this](const auto element) {
-                        result.push_back(m_operation->processOperation(element));
+                        return m_operation->processOperation(element);
                     });
 
     return std::move(result);
